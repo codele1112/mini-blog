@@ -6,6 +6,7 @@ const { engine } = require("express-handlebars");
 const app = express();
 const port = 3005;
 
+app.use(express.static(path.join(__dirname, "public")));
 app.use(morgan("combined"));
 
 app.engine(
@@ -20,10 +21,10 @@ app.set("views", path.join(__dirname, "/resources/views"));
 console.log("path:", __dirname + "/resource/views");
 
 app.get("/", (req, res) => {
-  return res.render("home");
+  return res.render("home.hbs");
 });
 app.get("/news", (req, res) => {
-  return res.render("news");
+  return res.render("news.hbs");
 });
 
 // 127.0.0.1 - local host 3005
