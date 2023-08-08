@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">MiniBlog</a>
+   <div class="container">
+
+    <a class="navbar-brand" href="/">MiniCourses</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -12,14 +13,30 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+  <ul class="navbar-nav mb-2 mb-lg-0 ms-auto ">  
+ <li class="nav-item dropdown ">
+     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      {{!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png" alt="" class="user-avatar"> --}}
+              Vy Nguyen
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/courses/create">Create Courses</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/me/stored/courses">My courses</a></li>
+              <li><a class="dropdown-item" href="/me/stored/news">My posts</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+   </li>
+  </ul>
+
+
+   </div>
+  
+     
+    
       </form>
     </div>
   </div>
